@@ -1,0 +1,79 @@
+.container {
+  background-image: url('./background.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: cursive;
+
+  @media only screen and (max-width: 767px) {
+    justify-content:center;
+  }
+}
+
+.section {
+  width: 50%;
+  background: white;
+  opacity: 0.8;
+  padding: 20px;
+  text-align: center;
+  margin-right: 50px;
+  @media only screen and (max-width: 767px) {
+    width: 250px;
+    margin-right: 0;
+  }
+}
+
+.section .button-section button {
+  width: calc(50% - 5px);
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.section .button-section button:first-of-type {
+  background: red;
+}
+
+.section .button-section button:last-of-type {
+  background: black;
+  color: white;
+}
+
+.d-none {
+  display: none;
+}
+
+.section.no-modal,
+.section.yes-modal,
+.letter {
+  position: absolute;
+  opacity: 1;
+}
+
+button:active,
+.btn:active {
+  transform: scale(1);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.letter {
+  @media only screen and (max-width: 767px) {
+    overflow: scroll;
+    height: calc(100% - 60px);
+    padding: 10px;
+  }
+}
+
+h2 {
+  @media only screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.section.yes-modal {
+  @media only screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
